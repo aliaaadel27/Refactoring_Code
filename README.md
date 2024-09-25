@@ -19,15 +19,20 @@ Open the project: Navigate to the directory where the project is located.
 
 Run the project: Simply open the index.html file in any modern web browser by double-clicking it or right-clicking and selecting "Open with browser".
 
+
 Features:
 Responsive Navigation Bar: The navbar adjusts based on screen size (collapsible for mobile).
 Blog Articles: Each article is styled using Bootstrap card components.
 Comment Form: Users can leave feedback through a simple form under each article.
 Contact Form: A basic contact form is located in the footer for user inquiries.
 Back-to-Top Link: A link to scroll back to the top of the page.
+
+
 Notes:
 No backend is implemented in this version. The contact form and comment form actions are placeholders and need to be connected to a server or backend service to function.
 The CSS for styles is loaded asynchronously to improve page performance.
+
+
 Future Enhancements:
 Adding a backend for managing blog posts and comments.
 Implementing a dynamic blog post system using a database.
