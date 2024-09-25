@@ -14,7 +14,7 @@ You just need a web browser to run the project. No additional dependencies are r
 
 Steps to Run:
 Download or clone the repository:
-git clone https://github.com/username/my-advanced-blog.git
+git clone https://github.com/aliaaadel27/Refactoring_Code.git
 Open the project: Navigate to the directory where the project is located.
 
 Run the project: Simply open the index.html file in any modern web browser by double-clicking it or right-clicking and selecting "Open with browser".
