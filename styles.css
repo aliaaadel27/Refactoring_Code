@@ -1,0 +1,215 @@
+:root{
+    --primary-color:#012448;
+    --primary-hover-color: #0056b3;
+    --background-color: #f4f4f9;
+    --header-color: white;
+    --text-color: #000000;
+    --sidebar-background: #f8f9fa;
+    --footer-background: #343a40;
+    --font-family: Arial, sans-serif;
+    --spacing-large: 40px;
+    --spacing-small: 20px;
+    --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --box-shadow-dark: 0 8px 16px rgba(0, 0, 0, 0.2)
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+}
+.header {
+    background-color: var(--primary-color);
+    color: var(--header-color);
+    padding: var(--spacing-large) 0;
+    text-align: center;
+    position: relative;
+}
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background-color: var(--header-color);
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-small);
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.nav-links a {
+    color: var(--header-color);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.search-form {
+    max-width: 300px; /* or any width you prefer */
+    margin: 10px; /* Adjust the margin as needed */
+}
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: var(--spacing-small);
+    padding: var(--spacing-small);
+    background-color: white;
+    box-shadow: var(--box-shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-dark);
+}
+.card h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color); /* Using primary color */
+    margin-bottom: 15px;
+}
+.card p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+.card .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+.card .btn-primary:hover {
+    background-color: var(--primary-hover-color);
+}
+.sidebar {
+    background-color: var(--sidebar-background);
+    padding: var(--spacing-small);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow-light);
+    margin-bottom: var(--spacing-small);
+}
+.sidebar h3 {
+    margin-bottom: var(--spacing-small);
+    font-size: 1.2rem;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: var(--footer-background);
+    color: var(--header-color);
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: var(--spacing-large);
+}
+
+.footer h3 {
+    margin-bottom: var(--spacing-small);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.contact-form {
+    max-width: 50%;
+    margin: auto; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow-dark);
+    
+    
+}
+
+.contact-form .form-label {
+    font-weight: bold; 
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+}
+
+
+
+.contact-form button {
+    margin-top: var(--spacing-small); 
+    background-color: var(--background-color);
+    color:var(--footer-background);
+    border: none;
+    font-weight: bold;
+    
+}
+
+.footer p {
+    margin: 0; 
+}
+
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    background-color:var(--background-color); 
+    color: var(--text-color);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: top 0.3s ease;
+
+}
+
+.skip-link:focus {
+    top: 20px; 
+
+}   
+
+main {
+    position: relative;
+}
+
+section {
+    padding-bottom: 5rem;
+    height: 200vh;
+}
+
+.scroll-top {
+    position: absolute;
+    top: 90vh;
+    bottom: 2rem;
+    right: 1rem;
+
+}
+
+.scroll-top-link {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 85vh;
+    text-decoration:none;
+    background-color:var(--primary-color);
+    color:var(--header-color);
+    padding:1rem;
+    border-radius: 5px;
+}
+
+.scroll-top-link:hover {
+    background-color: var(--primary-hover-color);
+    color:var(--header-color);
+
+}
+
