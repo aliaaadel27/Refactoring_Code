@@ -54,8 +54,8 @@ nav ul {
     text-decoration: underline;
 }
 .search-form {
-    max-width: 300px; /* or any width you prefer */
-    margin: 10px; /* Adjust the margin as needed */
+    max-width: 300px; 
+    margin: 10px; 
 }
 .card {
     border: 1px solid #ddd;
@@ -71,7 +71,7 @@ nav ul {
 }
 .card h2 {
     font-size: 1.5rem;
-    color: var(--primary-color); /* Using primary color */
+    color: var(--primary-color); 
     margin-bottom: 15px;
 }
 .card p {
